@@ -1,0 +1,61 @@
+body {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.top {
+  color: rgb(140, 209, 186);
+}
+.details {
+  color: rgb(103, 144, 144);
+}
+
+button {
+  font-weight: bolder;
+  font-size: larger;
+  border: 5px solid rgb(208, 208, 239);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(155, 221, 221);
+}
+button:hover {
+  background-color: rgb(127, 174, 232);
+  color: aliceblue;
+  border-color: rgb(186, 235, 218);
+}
+
+/* to add animation to quiz result text */
+.result-box {
+  /* width: 200px; */
+  /* height: 10%; */
+  padding: 25px;
+  border: 5px solid transparent; /* Start with a transparent border */
+  border-radius: 100px;
+  animation: rotateBorder 5s linear infinite; /* Apply the animation */
+}
+
+@keyframes rotateBorder {
+  0% {
+    border-color: rgb(0, 94, 255); /* Start with one color */
+  }
+  25% {
+    border-color: rgb(0, 179, 255); /* Rotate to the next color at 25% */
+  }
+  50% {
+    border-color: green; /* Rotate to the next color at 50% */
+  }
+  75% {
+    border-color: rgb(0, 179, 255); /* Rotate to the next color at 75% */
+  }
+  100% {
+    border-color: rgb(0, 94, 255); /* Back to the original color at 100% */
+  }
+}

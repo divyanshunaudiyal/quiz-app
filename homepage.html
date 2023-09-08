@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          class="logo"
+          id="logo"
+          src="https://img.freepik.com/premium-vector/quiz-logo-icon-symbol_101884-1075.jpg?size=626&ext=jpg&ga=GA1.2.1920914840.1693760878&semt=sph"
+          alt="logo img"
+        />
+
+        <div class="text">
+          <h1 class="bordered">HELLO USER!</h1>
+          <h5>
+            <span class="black">Enter your name to continue the quiz</span>
+          </h5>
+        </div>
+        <div class="entry">
+          <input
+            type="text"
+            class="name"
+            id="name"
+            placeholder="enter your name"
+          />
+          <button type="submit" id="enter" class="enter">ENTER</button>
+        </div>
+      </header>
+
+      <div class="category">
+        <div class="text">
+          <h5>
+            <span class="grey">you have 30 sec to answer each question</span>
+          </h5>
+          <h1>Select Category</h1>
+        </div>
+        <div id="button-container" class="button-container">
+          <button
+            type="submit"
+            class="quiz-name"
+            onclick="startQuiz('Pipes and cisterns')"
+          >
+            Pipes and cisterns
+          </button>
+          <button
+            type="submit"
+            class="quiz-name"
+            onclick="startQuiz('Probability')"
+          >
+            Probability
+          </button>
+          <button
+            type="submit"
+            class="quiz-name"
+            onclick="startQuiz('Problem on ages')"
+          >
+            Problem on ages
+          </button>
+          <button
+            type="submit"
+            class="quiz-name"
+            onclick="startQuiz('Profit and Loss')"
+          >
+            Profit and Loss
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="container-top">
+          <div id="top" class="top">
+            <div class="timer" id="timer"></div>
+            <div class="score" id="score">SCORE:0</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="question-container">
+        <div class="question">
+          <div class="question-no"></div>
+          <div id="ques" class="ques"></div>
+          <div class="options answers">
+            <button class="answer A" id="A">A</button>
+            <button class="answer B" id="B">B</button>
+            <button class="answer C" id="C">C</button>
+            <button class="answer D" id="D">D</button>
+          </div>
+        </div>
+        <div class="next">
+          <button id="next">next question</button>
+        </div>
+      </div>
+    </div>
+    <script src="quizques.js"></script>
+    <script src="quizfunctionality.js"></script>
+  </body>
+</html>

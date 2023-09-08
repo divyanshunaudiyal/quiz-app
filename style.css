@@ -1,0 +1,79 @@
+body {
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+img {
+  height: 100px;
+  max-height: 10%; /* Increase the max height to make images larger */
+  max-width: 15%; /* Set the max width to maintain aspect ratio */
+}
+header {
+  /* overflow: hidden; */
+}
+
+.container {
+  max-height: 100%;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content); /* Create a 2x2 grid */
+  gap: 10px; /* Adjust the gap between buttons */
+  text-align: center; /* Center the buttons within each grid cell */
+  justify-content: center; /* align buttons center */
+}
+
+button {
+  padding: 10px;
+  letter-spacing: 1px;
+  border-color: rgb(46, 112, 112);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(206, 233, 238);
+}
+.text {
+  color: rgb(84, 164, 164);
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.bordered {
+  display: inline-block; /* Make the h1 an inline-block element */
+  border-bottom: 1px solid #c4bcbc; /* Add a border around the h1 */
+  padding: 5px 5px 0 5px; /* Add padding to create space inside the border */
+  box-sizing: content-box; /* Ensure that padding is included in the content width */
+  margin-bottom: 0;
+}
+
+input {
+  text-align: center; /* text in between */
+  border: solid rgb(46, 112, 112);
+  border-radius: 10px;
+  padding: 10px;
+  width: 35%;
+}
+
+h1 {
+  height: fit-content;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 10px rgb(136, 201, 212);
+}
+.black {
+  /*text between welcome greeting and input username */
+  color: black;
+  letter-spacing: 2px;
+}
+.grey {
+  color: grey;
+}
+.enter {
+  /*button enter */
+  color: antiquewhite;
+  background-color: #50c6d9;
+}
+button:hover {
+  background-color: #fec132;
+}
