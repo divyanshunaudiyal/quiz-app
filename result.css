@@ -39,7 +39,7 @@ button:hover {
   padding: 25px;
   border-bottom: 5px solid transparent; /* Start with a transparent border */
   border-top: 5px solid transparent;
-  border-radius: 100px;
+  
   animation: rotateBorder 5s linear infinite; /* Apply the animation */
 }
 
