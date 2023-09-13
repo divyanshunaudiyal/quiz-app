@@ -2,6 +2,7 @@ const ques = document.getElementById("ques");
 const next = document.getElementById("next");
 const displayScore = document.getElementById("score");
 const answer = document.querySelectorAll(".answer"); //nodelist of answers
+const time = document.getElementById("timer");
 
 //answer options
 const A = document.getElementById("A");
@@ -17,24 +18,31 @@ let score = 0,
   attempt = 0;
 
 //creating timer
-function timer() {
-  let timer = document.getElementById("timer");
+let timerInterval; // Declare a variable to store the interval ID
 
+function timer() {
   let seconds = 30;
-  timer.textContent = seconds;
-  setInterval(function () {
+  time.textContent = seconds;
+
+  // Clear the previous timer, if any
+  if (timerInterval) {
+    clearInterval(timerInterval);
+  }
+
+  timerInterval = setInterval(function () {
     if (seconds > 0) {
-      timer.textContent = seconds;
+      time.textContent = seconds;
       seconds--;
     } else {
-      timer.textContent = 30;
+      time.textContent = 30;
       seconds = 30;
-      //if time's up nextQuestion is called
+      clearInterval(timerInterval); // Clear the timer when time's up
+      // If time's up, call nextQuestion
       nextQuestion();
     }
   }, 1000);
 }
-timer();
+
 // ------------------------------------------
 
 // Get the category from sessionStorage
@@ -59,6 +67,7 @@ function displayQuestion(array, questionNumber) {
 
   //remove all prev selected option
   answer.forEach((btn) => {
+    timer();
     btn.classList.remove("selected");
   });
 }
