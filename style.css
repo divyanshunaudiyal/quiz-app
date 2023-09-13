@@ -1,7 +1,7 @@
 body {
   height: 100%;
   font-family: "Courier New", Courier, monospace;
-  background: linear-gradient(45deg, #ff0000, #00ff00);
+  background: linear-gradient(to bottom, #add8e6, #0000ff, #add8e6);
 }
 img {
   height: 100px;
